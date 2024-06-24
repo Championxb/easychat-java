@@ -142,6 +142,9 @@ public class ChatSessionUserServiceImpl implements ChatSessionUserService {
 
     @Override
     public void updateRedundanceInfo(String contactName, String contactId) {
+        if (StringTools.isEmpty(contactName)) {
+            return;
+        }
         ChatSessionUser updateInfo = new ChatSessionUser();
         updateInfo.setContactName(contactName);
 

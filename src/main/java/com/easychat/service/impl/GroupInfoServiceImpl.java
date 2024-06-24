@@ -195,7 +195,7 @@ public class GroupInfoServiceImpl implements GroupInfoService {
             }
             //新增头像必须传
             if (null == avatarFile) {
-                throw new BusinessException(ResponseCodeEnum.CODE_600);
+//                throw new BusinessException(ResponseCodeEnum.CODE_600);
             }
             groupInfo.setCreateTime(curDate);
             groupInfo.setGroupId(StringTools.getGroupId());
